@@ -1,0 +1,14 @@
+#
+# Python virtual environment
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# GitHub credentials
+*.github_token
+*.github_credentials
+
+# GitHub CI key
+github-ci-key.json
