@@ -89,7 +89,7 @@ jobs:
       #  Escaneo de seguridad — Frontend
       # ─────────────────────────────────────
       - name: Trivy scan frontend image
-        uses: aquasecurity/trivy-action@0.33.1
+        uses: aquasecurity/trivy-action@master
         with:
           image-ref: '${{ env.REGISTRY }}/${{ secrets.PROJECT_ID }}/${{ env.REPO }}/agent-frontend:${{ github.sha }}'
           format: 'table'
