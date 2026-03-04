@@ -28,9 +28,6 @@ jobs:
       # ─────────────────────────────────────
       # Crear .env del backend dinámicamente
       # ─────────────────────────────────────
-      - name: Create backend .env
-        run: |
-          echo "GOOGLE_API_KEY=${{ secrets.GOOGLE_API_KEY }}" > backend/.env
 
       # ANTES (clave JSON):
       # - name: Authenticate to GCP
