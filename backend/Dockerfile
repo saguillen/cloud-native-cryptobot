@@ -1,6 +1,4 @@
-#FROM python:3.12-slim
-#Tested with 3.9-slim for better compatibility with some libraries
-FROM python:3.9-slim 
+FROM python:3.12-slim
 
 WORKDIR /app
 
