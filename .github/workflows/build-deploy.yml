@@ -124,6 +124,7 @@ jobs:
       - name: Deploy to GKE via Ansible
         env:
           PROJECT_ID: ${{ secrets.PROJECT_ID }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           USE_GKE_GCLOUD_AUTH_PLUGIN: "True"
         run: |
           ansible-playbook ansible/deploy-gke.yml \
