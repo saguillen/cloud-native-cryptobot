@@ -77,7 +77,7 @@ jobs:
       #  Escaneo de seguridad — Backend
       # ─────────────────────────────────────
       - name: Trivy scan backend image
-        uses: aquasecurity/trivy-action@0.33.1
+        uses: aquasecurity/trivy-action@master
         with:
           image-ref: '${{ env.REGISTRY }}/${{ secrets.PROJECT_ID }}/${{ env.REPO }}/agent-backend:${{ github.sha }}'
           format: 'table'
